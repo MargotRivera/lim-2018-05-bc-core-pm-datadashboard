@@ -145,7 +145,7 @@ const dataCohort = (place) => {
                     const buttonText = document.createTextNode('Entrar');
 
                     
-                    button.dataset.cohort = cohortId;
+                    button.cohort = cohortId;
                     paragraph.appendChild(paragraphText);
                     paragraphContent.appendChild(paragraph);
                     cohortContent.appendChild(paragraphContent);
@@ -164,38 +164,34 @@ btnLima.addEventListener('click', () => {
     const valueBtnLima = btnLima.value;
     dataCohort(valueBtnLima)
     container.style ='display:none';
-    containerTable.style ='display:block';
-    document.getElementById('text').style = 'display:none';
+    cohortsSelectedElement.style ='display:block';
 })
 
 btnArequipa.addEventListener('click', () => {
     const valueBtnArequipa = btnArequipa.value;
     dataCohort(valueBtnArequipa)
     container.style = 'display:none';
-    containerTable.style ='display:block';
-    document.getElementById('text').style = 'display:none';
+    cohortsSelectedElement.style ='display:block';
 })
 
 btnMexico.addEventListener('click', () => {
     const valueBtnMexico = btnMexico.value;
     dataCohort(valueBtnMexico)
     container.style ='display:none';
-    containerTable.style ='display:block';
-    document.getElementById('text').style = 'display:none';
+    cohortsSelectedElement.style ='display:block';
 })
 btnChile.addEventListener('click', () => {
     const valueBtnChile = btnChile.value;
     dataCohort(valueBtnChile)
     container.style ='display:none';
-    containerTable.style ='display:block';
-    document.getElementById('text').style = 'display:none';
+    cohortsSelectedElement.style ='display:block';
 })
 btnSaoPaulo.addEventListener('click', () => {
     const valueBtnSaoPaulo = btnSaoPaulo.value;
     dataCohort(valueBtnSaoPaulo)
     container.style ='display:none';
-    containerTable.style ='display:block';
-    document.getElementById('text').style = 'display:none';
+    
+    cohortsSelectedElement.style ='display:block';
 })
 
 

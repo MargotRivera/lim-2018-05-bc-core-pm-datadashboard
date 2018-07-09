@@ -29,7 +29,7 @@ window.computeUsersStats = (users, progress, courses) => {
 
                     for (unit of unitsArray) {//recorrido por unidades
 
-                        const partsArray = Object.keys(progress[userID][course].units[unit].parts);;
+                        const partsArray = Object.keys(progress[userID][course].units[unit].parts);
 
                         for (part of partsArray) {//recorrido por partes
 
